@@ -35,35 +35,35 @@ const Navbar = ({ theme, setTheme }) => {
         <img
           src={assets.close_icon}
           alt="close-button-icon"
-          className="w-5 absolute right-4 top-4 md:hidden cursor-pointer"
+          className="w-5 absolute right-4 top-4 md:hidden cursor-pointer!"
           onClick={() => setSideBarOpen(false)}
         />
 
         <a
           onClick={() => setSideBarOpen(false)}
           href="#"
-          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors"
+          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors cursor-pointer!"
         >
           Home
         </a>
         <a
           onClick={() => setSideBarOpen(false)}
           href="#services"
-          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors"
+          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors cursor-pointer!"
         >
           Services
         </a>
         <a
           onClick={() => setSideBarOpen(false)}
           href="#our-work"
-          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors"
+          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors cursor-pointer!"
         >
           Our Work
         </a>
         <a
           onClick={() => setSideBarOpen(false)}
           href="#contact-us"
-          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors"
+          className="max-md:hover:text-gray-300 lg:hover:border-b transition-colors cursor-pointer!"
         >
           Contact Us
         </a>
@@ -76,12 +76,12 @@ const Navbar = ({ theme, setTheme }) => {
           src={theme === "dark" ? assets.menu_icon_dark : assets.menu_icon}
           onClick={() => setSideBarOpen(true)}
           alt="menu button"
-          className="w-8 md:hidden cursor-pointer"
+          className="w-8 md:hidden cursor-pointer!"
         />
 
         <a
           href="#contact-us"
-          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
+          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer! hover:scale-103 transition-all"
         >
           Connect <img src={assets.arrow_icon} width={14} alt="forward-arrow" />
         </a>

@@ -18,8 +18,8 @@ function App() {
   const outlineRef = useRef(null);
 
   // Ref for custom cursor position tracking
-  const mouse = useRef({ x: 0, y: 0 });
-  const position = useRef({ x: 0, y: 0 });
+  const mouse = useRef({ x: -20, y: -20 });
+  const position = useRef({ x: -20, y: -20 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -56,7 +56,7 @@ function App() {
       <Toaster
         position="bottom-right"
         className="mb-10"
-        toastOptions={{ duration: 1000 }}
+        toastOptions={{ duration: 1500 }}
       />
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
@@ -70,14 +70,14 @@ function App() {
       {/* Custom Cursor Ring */}
       <div
         ref={outlineRef}
-        className={`fixed top-0 left-0 size-10 rounded-full border ${theme === "dark" ? "border-primary" : "border-black"} pointer-events-none z-9999`}
+        className={`fixed top-0 left-0 size-10 rounded-full border max-md:hidden ${theme === "dark" ? "border-primary" : "border-black"} pointer-events-none z-9999`}
         style={{ transition: "transform 0.05s ease-out" }}
       ></div>
 
       {/* Custom Cursor Dot */}
       <div
         ref={dotRef}
-        className={`fixed top-0 left-0 size-3 rounded-full ${theme === "light" ? "bg-black" : "bg-primary"} pointer-events-none z-9999`}
+        className={`fixed top-0 left-0 size-3 rounded-full max-md:hidden ${theme === "light" ? "bg-black" : "bg-primary"} pointer-events-none z-9999`}
       ></div>
     </div>
   );

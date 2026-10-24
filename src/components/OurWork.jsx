@@ -5,12 +5,12 @@ import { motion, stagger } from "motion/react";
 const OurWork = () => {
   const container = {
     hidden: {},
-    visible: { transition: { delayChildren: stagger(0.3) } },
+    visible: { transition: { delayChildren: stagger(0.4) } },
   };
 
   const item = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   const workData = [
