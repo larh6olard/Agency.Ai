@@ -9,7 +9,7 @@ const Footer = ({ theme }) => {
     const formData = new FormData(event.target);
     const email = formData.get("email");
 
-    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+    formData.append("access_key", import.meta.env.FORM_KEY);
     formData.append("subject", "New newsletter subscriber");
     formData.append(
       "message",
