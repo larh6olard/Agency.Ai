@@ -15,7 +15,7 @@ const ContactUs = () => {
     const formData = new FormData(event.target);
     const name = formData.get("name");
 
-    formData.append("access_key", import.meta.env.FORM_KEY);
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
     formData.append("subject", `${name} reached out to you`);
 
     toast.loading("Loading...", { id: "message" });
