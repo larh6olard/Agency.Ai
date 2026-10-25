@@ -52,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div className="dark:bg-black transition-all duration-200 relative">
+    <div className="dark:bg-black transition-all duration-200 relative overflow-x-clip">
       <Toaster
         position="bottom-right"
         className="mb-10"

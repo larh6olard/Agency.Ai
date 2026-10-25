@@ -26,3 +26,7 @@
 @media screen and (width < 48rem) {
   * { cursor: auto; }
 }
+
+html, body {
+  overflow-x: clip;
+}
